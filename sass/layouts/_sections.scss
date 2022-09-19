@@ -28,16 +28,20 @@
     {
         display: flex;
         align-items: center;
-        margin-bottom: 25px;
+        margin: 0 10px 25px 10px;
         background-color: $background;
         border-radius: 15px;
         box-shadow: $boxshadow;
         text-align: center;
+        font-size: large;
         cursor: pointer;
+        transform: scale(1);
         &:hover
         {
-            background-color: $backfonction;
+            background-color: #F9D9FF;
+            transform: scale(1.05);
         }
+        
         .numb
         {
             font-size: small;
@@ -68,6 +72,7 @@
         background-color: $color;
         border-radius: 25px;
         box-shadow: $boxshadow;
+        text-decoration: none;
         width: 90%;
         margin: 20px;
         .imgsection3
@@ -77,30 +82,44 @@
             height: 150px;
             object-fit: cover;
         }
+        .new
+        {
+            position: absolute;
+            display: block;
+            right: 50px;
+            padding: 10px;
+            background-color: $tertiary;
+            color: #2B7D57;
+            font-weight: bold;
+        }
         .cardvue
         {
             padding: 10px;
             display: flex;
             align-items: center;
-            text-decoration: none;
             color: $colorcard;
             .name
             {
                 flex: 1;
                 h4
                 {
-                   margin: 0px; 
+                    font-size: large;
+                    margin: 5px;
                 }
                 p
                 {
-                    margin: 0px;
+                    margin: 5px;
                 }
             }
         }
         .heart
         {
-        width: 50px;
-        height: 50px; 
+            font-size:x-large;
+            padding: 5px;
+            &::before
+            {
+                background-color: $backgroundbutton;
+            }
         }
     }
 }

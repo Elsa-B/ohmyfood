@@ -29,7 +29,12 @@ header .logo {
 .headermenu {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.headermenu .arrow {
+  color: black;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 /*Footer*/
@@ -57,10 +62,59 @@ footer div .mentions .iconsfooter {
   padding-right: 5px;
 }
 
+/*Carte*/
+.picturemenu {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  margin-top: -40px;
+  background-color: #ededed;
+  border-radius: 25px 25px 0 0;
+  padding: 10px;
+  position: relative;
+}
+.menu .titleresto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.menu .titleresto .heartcard {
+  font-size: x-large;
+}
+
+.title_menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px grey;
+  cursor: pointer;
+  transform: scale(1);
+}
+.title_menu h4 {
+  margin: 3px;
+}
+.title_menu .mapsmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title_menu .mapsmenu p {
+  margin: 3px;
+}
+
 /*Section1*/
 .section1 {
   text-align: center;
-  background-color: #EDEDED;
+  background-color: #ededed;
   padding: 15px;
 }
 .section1 .maps {
@@ -84,15 +138,18 @@ footer div .mentions .iconsfooter {
 .section3 .choice {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 0 10px 25px 10px;
   background-color: #F5F5F5;
   border-radius: 15px;
-  box-shadow: 3px 3px 7px grey;
+  box-shadow: 3px 3px 5px grey;
   text-align: center;
+  font-size: large;
   cursor: pointer;
+  transform: scale(1);
 }
 .section3 .choice:hover {
-  background-color: #F1E3FF;
+  background-color: #F9D9FF;
+  transform: scale(1.05);
 }
 .section3 .choice .numb {
   font-size: small;
@@ -118,7 +175,8 @@ footer div .mentions .iconsfooter {
   display: block;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 3px 3px 7px grey;
+  box-shadow: 3px 3px 5px grey;
+  text-decoration: none;
   width: 90%;
   margin: 20px;
 }
@@ -129,64 +187,37 @@ footer div .mentions .iconsfooter {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.section4 .card .new {
+  position: absolute;
+  display: block;
+  right: 50px;
+  padding: 10px;
+  background-color: #99E2D0;
+  color: #2B7D57;
+  font-weight: bold;
+}
 .section4 .card .cardvue {
   padding: 10px;
   display: flex;
   align-items: center;
-  text-decoration: none;
   color: black;
 }
 .section4 .card .cardvue .name {
   flex: 1;
 }
+.section4 .card .cardvue .name h4 {
+  font-size: large;
+  margin: 5px;
+}
+.section4 .card .cardvue .name p {
+  margin: 5px;
+}
 .section4 .card .heart {
-  width: 50px;
-  height: 50px;
+  font-size: x-large;
+  padding: 5px;
 }
-
-/*Carte*/
-.picturemenu {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.menu {
-  margin-top: -40px;
-  background-color: #ededed;
-  border-radius: 25px 25px 0 0;
-  padding: 10px;
-  position: relative;
-}
-.menu .titleresto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.titlemenu {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px grey;
-  cursor: pointer;
-  transform: scale(1);
-}
-.titlemenu h4 {
-  margin: 3px;
-}
-.titlemenu .mapsmenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.titlemenu .mapsmenu p {
-  margin: 3px;
+.section4 .card .heart::before {
+  background-color: linear-gradient(#FF79DA, #9356DC);
 }
 
 button {

@@ -15,8 +15,15 @@ header
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    .arrow
+    {
+        color: $colorcard;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
 }
+
 /*Footer*/
 footer
 {
@@ -46,5 +53,3 @@ footer
         }
     }
 }
-
-
