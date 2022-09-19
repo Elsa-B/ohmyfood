@@ -1,0 +1,218 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h5, h3 {
+  font-family: Shrikhand, sans-serif;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+/*En tête*/
+header {
+  text-align: center;
+  box-shadow: 0px 2px 2px #D4D4D4;
+  position: relative;
+}
+header .logo {
+  margin: 10px;
+  width: 50%;
+}
+
+.headermenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer*/
+footer {
+  background-color: #3B3B3B;
+  padding: 20px;
+}
+footer h5 {
+  color: white;
+  font-size: large;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer div .mentions {
+  color: white;
+  padding: 5px 0 10px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer div .mentions .iconsfooter {
+  padding-right: 5px;
+}
+
+/*Section1*/
+.section1 {
+  text-align: center;
+  background-color: #EDEDED;
+  padding: 15px;
+}
+.section1 .maps {
+  padding-right: 20px;
+}
+
+/*Section2*/
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+
+/*Section3*/
+.section3 {
+  margin: 0px 15px 0px 15px;
+}
+.section3 .choice {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  box-shadow: 3px 3px 7px grey;
+  text-align: center;
+  cursor: pointer;
+}
+.section3 .choice:hover {
+  background-color: #F1E3FF;
+}
+.section3 .choice .numb {
+  font-size: small;
+  background-color: #9356DC;
+  color: white;
+  width: 17px;
+  border-radius: 100px;
+  padding: 2px;
+  margin-left: -8px;
+}
+.section3 .choice .icons {
+  margin: 20px;
+}
+
+/*Section4*/
+.section4 {
+  background-color: #F5F5F5;
+}
+.section4 h2 {
+  padding: 20px 0 0 20px;
+}
+.section4 .card {
+  display: block;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 3px 3px 7px grey;
+  width: 90%;
+  margin: 20px;
+}
+.section4 .card .imgsection3 {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section4 .card .cardvue {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.section4 .card .cardvue .name {
+  flex: 1;
+}
+.section4 .card .heart {
+  width: 50px;
+  height: 50px;
+}
+
+/*Carte*/
+.picturemenu {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  margin-top: -40px;
+  background-color: #ededed;
+  border-radius: 25px 25px 0 0;
+  padding: 10px;
+  position: relative;
+}
+.menu .titleresto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titlemenu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px grey;
+  cursor: pointer;
+  transform: scale(1);
+}
+.titlemenu h4 {
+  margin: 3px;
+}
+.titlemenu .mapsmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titlemenu .mapsmenu p {
+  margin: 3px;
+}
+
+button {
+  padding: 15px;
+  border: 0px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px grey;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1);
+  transition-duration: 500ms;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.buttoncard {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+span {
+  -webkit-text-decoration: underline 4px #99E2D0;
+          text-decoration: underline 4px #99E2D0;
+  padding-left: 15px;
+}/*# sourceMappingURL=style.css.map */

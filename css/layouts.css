@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*En tête*/
+header {
+  text-align: center;
+  box-shadow: 0px 2px 2px #D4D4D4;
+  position: relative;
+}
+header .logo {
+  margin: 10px;
+  width: 50%;
+}
+
+.headermenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer*/
+footer {
+  background-color: #3B3B3B;
+  padding: 20px;
+}
+footer h5 {
+  color: white;
+  font-size: large;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer div .mentions {
+  color: white;
+  padding: 5px 0 10px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer div .mentions .iconsfooter {
+  padding-right: 5px;
+}/*# sourceMappingURL=layouts.css.map */

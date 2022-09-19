@@ -1,0 +1,106 @@
+/*Section1*/
+.section1
+{
+    text-align: center;
+    background-color: $paris;
+    padding: 15px;
+    .maps
+    {
+        padding-right: 20px;
+    }
+}
+/*Section2*/
+.section2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    padding: 30px;
+}
+
+/*Section3*/
+.section3
+{
+    margin: 0px 15px 0px 15px;
+    .choice
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        background-color: $background;
+        border-radius: 15px;
+        box-shadow: $boxshadow;
+        text-align: center;
+        cursor: pointer;
+        &:hover
+        {
+            background-color: $backfonction;
+        }
+        .numb
+        {
+            font-size: small;
+            background-color: $primary;
+            color: $color;
+            width: 17px;
+            border-radius: 100px;
+            padding: 2px;
+            margin-left: -8px ;
+        }
+        .icons
+        {
+            margin: 20px;
+        }
+    }
+}    
+/*Section4*/
+.section4
+{
+    background-color: $background;
+    h2
+    {
+        padding: 20px 0 0 20px;
+    }
+    .card
+    {
+        display: block;
+        background-color: $color;
+        border-radius: 25px;
+        box-shadow: $boxshadow;
+        width: 90%;
+        margin: 20px;
+        .imgsection3
+        {
+            border-radius: 25px 25px 0 0;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .cardvue
+        {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $colorcard;
+            .name
+            {
+                flex: 1;
+                h4
+                {
+                   margin: 0px; 
+                }
+                p
+                {
+                    margin: 0px;
+                }
+            }
+        }
+        .heart
+        {
+        width: 50px;
+        height: 50px; 
+        }
+    }
+}

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h5, h3 {
+  font-family: Shrikhand, sans-serif;
+}
+
+h3 {
+  font-size: x-large;
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,50 @@
+/*En tête*/
+header
+{
+    text-align: center;
+    box-shadow: 0px 2px 2px #D4D4D4;
+    position: relative;
+    .logo
+    {
+        margin: 10px;
+        width: 50%;
+    }
+}
+
+.headermenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Footer*/
+footer
+{
+    background-color: $backfooter;
+    padding: 20px;
+    h5
+    {
+        color: $color;
+        font-size: large;
+        padding-bottom: 20px;
+        margin: 0px;
+    }
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        .mentions
+        {
+            color: $color;
+            padding: 5px 0 10px 0;
+            cursor: pointer;
+            text-decoration: none;
+            .iconsfooter
+            {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+
