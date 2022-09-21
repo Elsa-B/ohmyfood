@@ -62,6 +62,36 @@ footer div .mentions .iconsfooter {
   padding-right: 5px;
 }
 
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  -webkit-animation: loader 1000ms;
+          animation: loader 1000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border: 30px solid #9356DC;
+  -o-border-image: linear-gradient(#FF79DA, #9356DC);
+     border-image: linear-gradient(#FF79DA, #9356DC);
+  border-image-slice: 1;
+  font-size: 90px;
+  -webkit-animation: turn 5000ms;
+          animation: turn 5000ms;
+}
+
 /*Carte*/
 .picturemenu {
   width: 100%;
@@ -117,15 +147,23 @@ footer div .mentions .iconsfooter {
   margin: 3px;
 }
 .title_menu .check {
-  font-size: xx-large;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
   border-radius: 0 15px 15px 0;
-  transform: rotate(180deg);
-  transition-duration: 600ms;
+  background-color: #99E2D0;
 }
 .title_menu .check:hover {
-  transform: rotate(0);
-  background-color: #99E2D0;
+  transition: 600ms ease-in-out;
+}
+.title_menu .check .check_rotate {
+  color: white;
+  font-size: x-large;
+}
+.title_menu .check .check_rotate:hover {
+  transform: rotate(360deg);
+  transition: 500ms;
 }
 
 /*Section1*/
@@ -263,4 +301,32 @@ span {
   -webkit-text-decoration: underline 4px #99E2D0;
           text-decoration: underline 4px #99E2D0;
   padding-left: 15px;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes turn {
+  0% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(720deg);
+  }
 }/*# sourceMappingURL=style.css.map */

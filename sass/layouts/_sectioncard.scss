@@ -60,15 +60,26 @@
     }
     .check
     {
-        font-size: xx-large;
-        color: $color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
         border-radius: 0 15px 15px 0;
-        transform: rotate(180deg);
-        transition-duration: 600ms;
+        background-color: $tertiary;
         &:hover
         {
-            transform: rotate(0); 
-            background-color: $tertiary;
+            transition: 600ms ease-in-out ;
+        }
+        .check_rotate
+        {
+            color: $color;
+            font-size: x-large;
+            &:hover
+            {
+                transform: rotate(360deg);
+                transition: 500ms;
+            }
+
         }
     }
 }

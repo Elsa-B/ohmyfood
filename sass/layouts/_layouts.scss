@@ -53,3 +53,30 @@ footer
         }
     }
 }
+
+.loader
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color;
+    height: 100%;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    animation: loader 1000ms;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
+    &::after
+    {
+        content: "";
+        height: 100px;
+        width: 100px;
+        border: 30px solid $primary;
+        border-image: $backgroundbutton;
+        border-image-slice: 1;
+        font-size: 90px;
+        animation: turn 5000ms;
+    }
+}
