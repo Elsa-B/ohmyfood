@@ -15,6 +15,11 @@ h3 {
   font-size: x-large;
 }
 
+h4 {
+  font-size: larger;
+  padding-bottom: 5px;
+}
+
 /*En tête*/
 header {
   text-align: center;
@@ -74,8 +79,8 @@ footer div .mentions .iconsfooter {
   opacity: 0.8;
   -webkit-animation: loader 1000ms;
           animation: loader 1000ms;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -95,7 +100,7 @@ footer div .mentions .iconsfooter {
 /*Carte*/
 .picturemenu {
   width: 100%;
-  height: 200px;
+  height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -116,52 +121,80 @@ footer div .mentions .iconsfooter {
 }
 .menu .titleresto .heartcard {
   font-size: x-large;
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+  transform: scale(1);
+}
+.menu .titleresto .heartcard:hover {
+  font-weight: bold;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transform: scale(1.2);
+  transition: all 400ms ease-in-out;
 }
 
 .title_menu {
+  white-space: nowrap;
+  overflow: hidden;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 10px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 5px grey;
   cursor: pointer;
   transform: scale(1);
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .title_menu .title_menu_padding {
-  padding: 10px;
+  padding: 15px;
   overflow: hidden;
-  text-overflow: ellipsis;
-}
-.title_menu .title_menu_padding h4 {
-  margin: 3px;
-}
-.title_menu .title_menu_padding .mapsmenu {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
-.title_menu .title_menu_padding .mapsmenu p {
-  margin: 3px;
+.title_menu .title_menu_padding .mapsmenu {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.title_menu .title_menu_padding .mapsmenu h4, .title_menu .title_menu_padding .mapsmenu p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title_menu .title_menu_padding .mapsmenu_price {
+  display: flex;
+  align-items: flex-end;
+}
+.title_menu .title_menu_padding .mapsmenu_price p {
+  font-weight: bold;
+  margin: 0;
 }
 .title_menu .check {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
+  width: 100px;
+  margin-right: -100px;
+  transition-duration: 500ms;
 }
-.title_menu .check:hover {
-  transition: 600ms ease-in-out;
+.title_menu:hover .check {
+  transform: translateX(-50%);
+  margin: 0 -40px 0 50px;
 }
-.title_menu .check .check_rotate {
+.title_menu .check_rotate {
+  font-size: xx-large;
   color: white;
-  font-size: x-large;
 }
-.title_menu .check .check_rotate:hover {
+.title_menu:hover .check_rotate {
   transform: rotate(360deg);
   transition: 500ms;
 }
@@ -201,10 +234,14 @@ footer div .mentions .iconsfooter {
   font-size: large;
   cursor: pointer;
   transform: scale(1);
+  transition-duration: 300ms;
 }
 .section3 .choice:hover {
-  background-color: #F9D9FF;
-  transform: scale(1.05);
+  background-color: #E9DFFF;
+  transform: scale(1.02);
+}
+.section3 .choice:hover .icons {
+  color: #9356DC;
 }
 .section3 .choice .numb {
   font-size: small;
@@ -222,6 +259,7 @@ footer div .mentions .iconsfooter {
 /*Section4*/
 .section4 {
   background-color: #F5F5F5;
+  height: 1070px;
 }
 .section4 h2 {
   padding: 20px 0 0 20px;
@@ -270,9 +308,18 @@ footer div .mentions .iconsfooter {
 .section4 .card .heart {
   font-size: x-large;
   padding: 5px;
+  cursor: pointer;
+  color: black;
+  transform: scale(1);
 }
-.section4 .card .heart::before {
-  background-color: linear-gradient(#FF79DA, #9356DC);
+.section4 .card .heart:hover {
+  font-weight: bold;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transform: scale(1.2);
+  transition: all 400ms ease-in-out;
 }
 
 button {
@@ -288,7 +335,9 @@ button {
   transition-duration: 500ms;
 }
 button:hover {
-  transform: scale(1.1);
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px #363636;
 }
 
 .buttoncard {
@@ -328,5 +377,25 @@ span {
 @keyframes turn {
   0% {
     transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

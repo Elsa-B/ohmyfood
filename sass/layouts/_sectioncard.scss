@@ -2,7 +2,7 @@
 .picturemenu
 {
     width: 100%;
-    height: 200px;
+    height: 240px;
     object-fit:cover;
 }
 
@@ -22,39 +22,67 @@
         margin: 10px;
         .heartcard
         {
-            font-size: x-large;
+            font-size:x-large;
+            padding: 5px;
+            cursor: pointer;
+            color: $colorcard;
+            transform: scale(1);
+            &:hover
+            {
+                font-weight: bold;
+                background: $backgroundbutton;
+                background-clip: text;
+                color: transparent;
+                transform: scale(1.2);
+                transition: all 400ms ease-in-out;
+            }
         }
+            
     }
 }
 .title_menu
 {
+    white-space: nowrap;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 10px;
     background-color: $color;
     border-radius: 15px;
     box-shadow: $boxshadow;
     cursor: pointer;
     transform: scale(1);
+    animation: appear 2s;
+    animation-fill-mode: both;
+    
     .title_menu_padding
     {
-        padding: 10px;
+        padding: 15px;
         overflow:hidden;
-        text-overflow: ellipsis;
-        h4
-        {
-            margin: 3px;
-        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
         .mapsmenu
         {
-            width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            overflow: hidden;
+            h4,p
+            {
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;  
+            }
+        }
+        .mapsmenu_price
+        {
+            display: flex;
+            align-items: flex-end;
+            
             p
             {
-                margin: 3px;
+                font-weight: bold;
+                margin: 0;  
             }
         }
     }
@@ -63,24 +91,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        border-radius: 0 15px 15px 0;
         background-color: $tertiary;
-        &:hover
-        {
-            transition: 600ms ease-in-out ;
-        }
-        .check_rotate
-        {
-            color: $color;
-            font-size: x-large;
-            &:hover
-            {
-                transform: rotate(360deg);
-                transition: 500ms;
-            }
+        width: 100px;
+        margin-right: -100px;
+        transition-duration: 500ms;
+    }
+    &:hover .check
+    { 
+        transform: translateX(-50%);
+        margin: 0 -40px 0 50px;
+    }
+    .check_rotate
+    {  
+        font-size: xx-large;
+        color: $color;  
+    }
+    &:hover .check_rotate
+    {
+        transform: rotate(360deg);
+        transition: 500ms;
 
-        }
     }
 }
 

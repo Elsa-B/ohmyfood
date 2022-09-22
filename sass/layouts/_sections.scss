@@ -36,10 +36,15 @@
         font-size: large;
         cursor: pointer;
         transform: scale(1);
+        transition-duration: 300ms;
         &:hover
         {
-            background-color: #F9D9FF;
-            transform: scale(1.05);
+            background-color: #E9DFFF;
+            transform: scale(1.02);
+        }
+        &:hover .icons
+        {
+            color: $primary;
         }
         
         .numb
@@ -62,6 +67,7 @@
 .section4
 {
     background-color: $background;
+    height: 1070px;
     h2
     {
         padding: 20px 0 0 20px;
@@ -116,9 +122,17 @@
         {
             font-size:x-large;
             padding: 5px;
-            &::before
+            cursor: pointer;
+            color: $colorcard;
+            transform: scale(1);
+            &:hover
             {
-                background-color: $backgroundbutton;
+                font-weight: bold;
+                background: $backgroundbutton;
+                background-clip: text;
+                color: transparent;
+                transform: scale(1.2);
+                transition: all 400ms ease-in-out;
             }
         }
     }
