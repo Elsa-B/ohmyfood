@@ -41,12 +41,6 @@
             text-align: center;
             font-size: large;
             cursor: pointer;
-            transform: scale(1);
-            transition-duration: 300ms;
-            &:hover
-            {
-                background-color: #EFDCFF;
-            }
             @media screen and (min-width: 992px) {
                 width: 30%;
             }
@@ -64,6 +58,19 @@
             {
                 margin: 20px;
             }
+        }
+        .choice_colorgrey
+        {
+            background-color: $background;
+        }
+        .choice_color
+        {
+            background-color: #F2E2FF;
+            .icons
+            {
+                color: $primary;
+            }
+            
         }
     }
 }    
@@ -159,14 +166,14 @@
                 padding: 5px;
                 cursor: pointer;
                 color: $colorcard;
-                transform: scale(0);
+                transform: scale(1);
                 &:hover
                 {
                     font-weight: bold;
                     background: $backgroundbutton;
                     background-clip: text;
                     color: transparent;
-                    transform: scale(1);
+                    transform: scale(1.3);
                     transition: all 400ms ease-in-out;
                 }
             }

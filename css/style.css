@@ -159,7 +159,7 @@ footer div .mentions .iconsfooter {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transform: scale(1.2);
+  transform: scale(1.3);
   transition: all 400ms ease-in-out;
 }
 
@@ -187,23 +187,11 @@ footer div .mentions .iconsfooter {
   border-radius: 15px;
   box-shadow: 3px 3px 5px grey;
   cursor: pointer;
-  transform: scale(1);
-  -webkit-animation: appear 2s;
-          animation: appear 2s;
+  transform: scale(0);
+  -webkit-animation: appear 3s;
+          animation: appear 3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-}
-.card_menu .title .title_menu .delay-1 {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-.card_menu .title .title_menu .delay-2 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-.card_menu .title .title_menu .delay-3 {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
 }
 .card_menu .title .title_menu .title_menu_padding {
   padding: 15px;
@@ -241,13 +229,7 @@ footer div .mentions .iconsfooter {
   transition-duration: 500ms;
 }
 .card_menu .title .title_menu:hover .check {
-  transform: translateX(-50%);
-  margin: 0 -40px 0 50px;
-}
-@media screen and (min-width: 768px) {
-  .card_menu .title .title_menu:hover .check {
-    margin: 0 -45px 0 50px;
-  }
+  margin: 0;
 }
 .card_menu .title .title_menu .check_rotate {
   font-size: xx-large;
@@ -256,6 +238,18 @@ footer div .mentions .iconsfooter {
 .card_menu .title .title_menu:hover .check_rotate {
   transform: rotate(360deg);
   transition: 500ms;
+}
+.card_menu .title .delay-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.card_menu .title .delay-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.card_menu .title .delay-3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 /*Section1*/
@@ -298,11 +292,6 @@ footer div .mentions .iconsfooter {
   text-align: center;
   font-size: large;
   cursor: pointer;
-  transform: scale(1);
-  transition-duration: 300ms;
-}
-.section3 .functioning .choice:hover {
-  background-color: #EFDCFF;
 }
 @media screen and (min-width: 992px) {
   .section3 .functioning .choice {
@@ -320,6 +309,15 @@ footer div .mentions .iconsfooter {
 }
 .section3 .functioning .choice .icons {
   margin: 20px;
+}
+.section3 .functioning .choice_colorgrey {
+  background-color: #F5F5F5;
+}
+.section3 .functioning .choice_color {
+  background-color: #F2E2FF;
+}
+.section3 .functioning .choice_color .icons {
+  color: #9356DC;
 }
 
 /*Section4*/
@@ -416,7 +414,7 @@ footer div .mentions .iconsfooter {
   padding: 5px;
   cursor: pointer;
   color: black;
-  transform: scale(0);
+  transform: scale(1);
 }
 .section4 .globalcard .card .heart:hover {
   font-weight: bold;
@@ -424,7 +422,7 @@ footer div .mentions .iconsfooter {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transform: scale(1);
+  transform: scale(1.3);
   transition: all 400ms ease-in-out;
 }
 
