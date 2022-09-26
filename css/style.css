@@ -293,7 +293,6 @@ footer div .mentions .iconsfooter {
   display: flex;
   align-items: center;
   margin: 0 10px 25px 10px;
-  background-color: #F5F5F5;
   border-radius: 15px;
   box-shadow: 3px 3px 5px grey;
   text-align: center;
@@ -302,17 +301,13 @@ footer div .mentions .iconsfooter {
   transform: scale(1);
   transition-duration: 300ms;
 }
+.section3 .functioning .choice:hover {
+  background-color: #EFDCFF;
+}
 @media screen and (min-width: 992px) {
   .section3 .functioning .choice {
     width: 30%;
   }
-}
-.section3 .functioning .choice:hover {
-  background-color: #E9DFFF;
-  transform: scale(1.02);
-}
-.section3 .functioning .choice:hover .icons {
-  color: #9356DC;
 }
 .section3 .functioning .choice .numb {
   font-size: small;

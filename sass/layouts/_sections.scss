@@ -36,7 +36,6 @@
             display: flex;
             align-items: center;
             margin: 0 10px 25px 10px;
-            background-color: $background;
             border-radius: 15px;
             box-shadow: $boxshadow;
             text-align: center;
@@ -44,19 +43,13 @@
             cursor: pointer;
             transform: scale(1);
             transition-duration: 300ms;
+            &:hover
+            {
+                background-color: #EFDCFF;
+            }
             @media screen and (min-width: 992px) {
                 width: 30%;
             }
-            &:hover
-            {
-                background-color: #E9DFFF;
-                transform: scale(1.02);
-            }
-            &:hover .icons
-            {
-                color: $primary;
-            }
-            
             .numb
             {
                 font-size: small;
