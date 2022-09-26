@@ -24,42 +24,53 @@
 .section3
 {
     margin: 0px 15px 0px 15px;
-    .choice
+    .functioning
     {
-        display: flex;
-        align-items: center;
-        margin: 0 10px 25px 10px;
-        background-color: $background;
-        border-radius: 15px;
-        box-shadow: $boxshadow;
-        text-align: center;
-        font-size: large;
-        cursor: pointer;
-        transform: scale(1);
-        transition-duration: 300ms;
-        &:hover
-        {
-            background-color: #E9DFFF;
-            transform: scale(1.02);
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
-        &:hover .icons
+        .choice
         {
-            color: $primary;
-        }
-        
-        .numb
-        {
-            font-size: small;
-            background-color: $primary;
-            color: $color;
-            width: 17px;
-            border-radius: 100px;
-            padding: 2px;
-            margin-left: -8px ;
-        }
-        .icons
-        {
-            margin: 20px;
+            display: flex;
+            align-items: center;
+            margin: 0 10px 25px 10px;
+            background-color: $background;
+            border-radius: 15px;
+            box-shadow: $boxshadow;
+            text-align: center;
+            font-size: large;
+            cursor: pointer;
+            transform: scale(1);
+            transition-duration: 300ms;
+            @media screen and (min-width: 992px) {
+                width: 30%;
+            }
+            &:hover
+            {
+                background-color: #E9DFFF;
+                transform: scale(1.02);
+            }
+            &:hover .icons
+            {
+                color: $primary;
+            }
+            
+            .numb
+            {
+                font-size: small;
+                background-color: $primary;
+                color: $color;
+                width: 17px;
+                border-radius: 100px;
+                padding: 2px;
+                margin-left: -8px ;
+            }
+            .icons
+            {
+                margin: 20px;
+            }
         }
     }
 }    
@@ -67,72 +78,104 @@
 .section4
 {
     background-color: $background;
-    height: 1070px;
+    height: 1140px;
+    @media screen and (min-width: 992px) {
+        height: 650px;
+    }
     h2
     {
-        padding: 20px 0 0 20px;
+        padding: 40px 0 0 20px;
     }
-    .card
+    .globalcard
     {
-        display: block;
-        background-color: $color;
-        border-radius: 25px;
-        box-shadow: $boxshadow;
-        text-decoration: none;
-        width: 90%;
-        margin: 20px;
-        .imgsection3
-        {
-            border-radius: 25px 25px 0 0;
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-        .new
-        {
-            position: absolute;
-            display: block;
-            right: 50px;
-            padding: 10px;
-            background-color: $tertiary;
-            color: #2B7D57;
-            font-weight: bold;
-        }
-        .cardvue
-        {
-            padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 992px) {
             display: flex;
-            align-items: center;
-            color: $colorcard;
-            .name
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card
+        {
+            display: block;
+            background-color: $color;
+            border-radius: 25px;
+            box-shadow: $boxshadow;
+            text-decoration: none;
+            width: 90%;
+            margin-bottom: 25px;
+            @media screen and (min-width: 992px) {
+                width: 45%;
+            }
+            .imgsection3
             {
-                flex: 1;
-                h4
-                {
-                    font-size: large;
-                    margin: 5px;
-                }
-                p
-                {
-                    margin: 5px;
+                border-radius: 25px 25px 0 0;
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+            .new-1
+            {
+                position: absolute;
+                right: 10%;
+                padding: 10px;
+                background-color: $tertiary;
+                color: #2B7D57;
+                font-weight: bold;
+                @media screen and (min-width: 992px) {
+                    right: 55%;
                 }
             }
-        }
-        .heart
-        {
-            font-size:x-large;
-            padding: 5px;
-            cursor: pointer;
-            color: $colorcard;
-            transform: scale(1);
-            &:hover
+            .new-2
             {
+                position: absolute;
+                right: 10%;
+                padding: 10px;
+                background-color: $tertiary;
+                color: #2B7D57;
                 font-weight: bold;
-                background: $backgroundbutton;
-                background-clip: text;
-                color: transparent;
-                transform: scale(1.2);
-                transition: all 400ms ease-in-out;
+                @media screen and (min-width: 992px) {
+                    right: 5%;
+                }
+            }
+            .cardvue
+            {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                color: $colorcard;
+                .name
+                {
+                    flex: 1;
+                    h4
+                    {
+                        font-size: large;
+                        margin: 5px;
+                    }
+                    p
+                    {
+                        margin: 5px;
+                    }
+                }
+            }
+            .heart
+            {
+                font-size:x-large;
+                padding: 5px;
+                cursor: pointer;
+                color: $colorcard;
+                transform: scale(1);
+                &:hover
+                {
+                    font-weight: bold;
+                    background: $backgroundbutton;
+                    background-clip: text;
+                    color: transparent;
+                    transform: scale(1.2);
+                    transition: all 400ms ease-in-out;
+                }
             }
         }
     }

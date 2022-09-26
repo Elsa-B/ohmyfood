@@ -40,78 +40,99 @@
             
     }
 }
-.title_menu
+
+.card_menu
 {
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-    margin: 10px;
-    background-color: $color;
-    border-radius: 15px;
-    box-shadow: $boxshadow;
-    cursor: pointer;
-    transform: scale(1);
-    animation: appear 2s;
-    animation-fill-mode: both;
-    
-    .title_menu_padding
-    {
-        padding: 15px;
-        overflow:hidden;
+    @media screen and (min-width: 992px) {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        .mapsmenu
+        justify-content: space-around;
+    } 
+    .title 
+    {
+        p
         {
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 25px;
+        }
+        @media screen and (min-width: 992px) {
+            width: 33%;
+        } 
+        .title_menu
+        {
+            white-space: nowrap;
             overflow: hidden;
-            h4,p
-            {
-                margin: 0;
-                overflow: hidden;
-                text-overflow: ellipsis;  
-            }
-        }
-        .mapsmenu_price
-        {
             display: flex;
-            align-items: flex-end;
-            
-            p
+            margin: 10px;
+            background-color: $color;
+            border-radius: 15px;
+            box-shadow: $boxshadow;
+            cursor: pointer;
+            transform: scale(1);
+            animation: appear 2s;
+            animation-fill-mode: both;
+            .title_menu_padding
             {
-                font-weight: bold;
-                margin: 0;  
+                padding: 15px;
+                overflow:hidden;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                .mapsmenu
+                {
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    h4,p
+                    {
+                        margin: 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;  
+                    }
+                }
+                .mapsmenu_price
+                {
+                    display: flex;
+                    align-items: flex-end;
+                    
+                    p
+                    {
+                        font-weight: bold;
+                        margin: 0;  
+                    }
+                }
+            }
+            .check
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $tertiary;
+                width: 100px;
+                margin-right: -100px;
+                transition-duration: 500ms;
+            }
+            &:hover .check
+            { 
+                transform: translateX(-50%);
+                margin: 0 -40px 0 50px;
+                @media screen and (min-width: 768px) {
+                    margin: 0 -45px 0 50px;
+                }
+                
+            }
+            .check_rotate
+            {  
+                font-size: xx-large;
+                color: $color;  
+            }
+            &:hover .check_rotate
+            {
+                transform: rotate(360deg);
+                transition: 500ms;
+
             }
         }
-    }
-    .check
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $tertiary;
-        width: 100px;
-        margin-right: -100px;
-        transition-duration: 500ms;
-    }
-    &:hover .check
-    { 
-        transform: translateX(-50%);
-        margin: 0 -40px 0 50px;
-    }
-    .check_rotate
-    {  
-        font-size: xx-large;
-        color: $color;  
-    }
-    &:hover .check_rotate
-    {
-        transform: rotate(360deg);
-        transition: 500ms;
-
     }
 }
-
 
