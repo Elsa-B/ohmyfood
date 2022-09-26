@@ -421,7 +421,7 @@ footer div .mentions .iconsfooter {
   padding: 5px;
   cursor: pointer;
   color: black;
-  transform: scale(0);
+  transform: scale(1);
 }
 .section4 .globalcard .card .heart:hover {
   font-weight: bold;
@@ -429,7 +429,7 @@ footer div .mentions .iconsfooter {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transform: scale(1);
+  transform: scale(1.2);
   transition: all 400ms ease-in-out;
 }
 

@@ -166,14 +166,14 @@
                 padding: 5px;
                 cursor: pointer;
                 color: $colorcard;
-                transform: scale(1);
+                transform: scale(0);
                 &:hover
                 {
                     font-weight: bold;
                     background: $backgroundbutton;
                     background-clip: text;
                     color: transparent;
-                    transform: scale(1.2);
+                    transform: scale(1);
                     transition: all 400ms ease-in-out;
                 }
             }
