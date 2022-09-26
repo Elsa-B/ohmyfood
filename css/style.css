@@ -193,6 +193,18 @@ footer div .mentions .iconsfooter {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+.card_menu .title .title_menu .delay-1 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.card_menu .title .title_menu .delay-2 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.card_menu .title .title_menu .delay-3 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
 .card_menu .title .title_menu .title_menu_padding {
   padding: 15px;
   overflow: hidden;
