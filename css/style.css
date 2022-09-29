@@ -248,22 +248,21 @@ footer div .mentions .iconsfooter {
           animation-delay: 1s;
 }
 .card_menu .title .delay-3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
-/*Section1*/
-.section1 {
+.location {
   text-align: center;
   background-color: #ededed;
   padding: 15px;
 }
-.section1 .maps {
+.location .maps {
   padding-right: 20px;
 }
 
-/*Section2*/
-.section2 {
+/*Section1*/
+.section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,18 +271,18 @@ footer div .mentions .iconsfooter {
   padding: 30px;
 }
 
-/*Section3*/
-.section3 {
+/*Section2*/
+.section2 {
   margin: 0px 15px 0px 15px;
 }
 @media screen and (min-width: 992px) {
-  .section3 .functioning {
+  .section2 .functioning {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 }
-.section3 .functioning .choice {
+.section2 .functioning .choice {
   display: flex;
   align-items: center;
   margin: 0 10px 25px 10px;
@@ -293,59 +292,59 @@ footer div .mentions .iconsfooter {
   font-size: large;
 }
 @media screen and (min-width: 992px) {
-  .section3 .functioning .choice {
+  .section2 .functioning .choice {
     width: 30%;
   }
 }
-.section3 .functioning .choice .numb {
+.section2 .functioning .choice .numb {
   font-size: small;
   background-color: #9356DC;
   color: white;
-  width: 17px;
+  width: 19px;
   border-radius: 100px;
   padding: 2px;
   margin-left: -8px;
 }
-.section3 .functioning .choice .icons {
+.section2 .functioning .choice .icons {
   margin: 20px;
 }
-.section3 .functioning .choice_colorgrey {
+.section2 .functioning .choice_colorgrey {
   background-color: #F5F5F5;
 }
-.section3 .functioning .choice_color {
+.section2 .functioning .choice_color {
   background-color: #F2E2FF;
 }
-.section3 .functioning .choice_color .icons {
+.section2 .functioning .choice_color .icons {
   color: #9356DC;
 }
 
-/*Section4*/
-.section4 {
+/*Section3*/
+.section3 {
   background-color: #F5F5F5;
   height: 1140px;
 }
 @media screen and (min-width: 992px) {
-  .section4 {
+  .section3 {
     height: 650px;
   }
 }
-.section4 h2 {
+.section3 h2 {
   padding: 40px 0 0 20px;
 }
-.section4 .globalcard {
+.section3 .globalcard {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 992px) {
-  .section4 .globalcard {
+  .section3 .globalcard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 }
-.section4 .globalcard .card {
+.section3 .globalcard .card {
   display: block;
   background-color: white;
   border-radius: 25px;
@@ -355,18 +354,18 @@ footer div .mentions .iconsfooter {
   margin-bottom: 25px;
 }
 @media screen and (min-width: 992px) {
-  .section4 .globalcard .card {
+  .section3 .globalcard .card {
     width: 45%;
   }
 }
-.section4 .globalcard .card .imgsection3 {
+.section3 .globalcard .card .imgsection3 {
   border-radius: 25px 25px 0 0;
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section4 .globalcard .card .new-1 {
+.section3 .globalcard .card .new-1 {
   position: absolute;
   right: 10%;
   padding: 10px;
@@ -375,11 +374,11 @@ footer div .mentions .iconsfooter {
   font-weight: bold;
 }
 @media screen and (min-width: 992px) {
-  .section4 .globalcard .card .new-1 {
+  .section3 .globalcard .card .new-1 {
     right: 55%;
   }
 }
-.section4 .globalcard .card .new-2 {
+.section3 .globalcard .card .new-2 {
   position: absolute;
   right: 10%;
   padding: 10px;
@@ -388,34 +387,34 @@ footer div .mentions .iconsfooter {
   font-weight: bold;
 }
 @media screen and (min-width: 992px) {
-  .section4 .globalcard .card .new-2 {
+  .section3 .globalcard .card .new-2 {
     right: 5%;
   }
 }
-.section4 .globalcard .card .cardvue {
+.section3 .globalcard .card .cardvue {
   padding: 10px;
   display: flex;
   align-items: center;
   color: black;
 }
-.section4 .globalcard .card .cardvue .name {
+.section3 .globalcard .card .cardvue .name {
   flex: 1;
 }
-.section4 .globalcard .card .cardvue .name h4 {
+.section3 .globalcard .card .cardvue .name h4 {
   font-size: large;
   margin: 5px;
 }
-.section4 .globalcard .card .cardvue .name p {
+.section3 .globalcard .card .cardvue .name p {
   margin: 5px;
 }
-.section4 .globalcard .card .heart {
+.section3 .globalcard .card .heart {
   font-size: x-large;
   padding: 5px;
   cursor: pointer;
   color: black;
   transform: scale(1);
 }
-.section4 .globalcard .card .heart:hover {
+.section3 .globalcard .card .heart:hover {
   font-weight: bold;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
