@@ -36,9 +36,11 @@
             align-items: center;
             margin: 0 10px 25px 10px;
             border-radius: 15px;
+            background-color: $background;
             box-shadow: $boxshadow;
             text-align: center;
             font-size: large;
+            cursor: pointer;
             @media screen and (min-width: 992px) {
                 width: 30%;
             }
@@ -56,19 +58,15 @@
             {
                 margin: 20px;
             }
-        }
-        .choice_colorgrey
-        {
-            background-color: $background;
-        }
-        .choice_color
-        {
-            background-color: #F2E2FF;
-            .icons
+            &:hover
             {
-                color: $primary;
+                background-color: #F2E2FF;
+                .icons
+                {
+                    color: $primary;
+                }
             }
-        }
+        } 
     }
 }    
 /*Section3*/

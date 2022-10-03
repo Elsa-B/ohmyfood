@@ -287,9 +287,11 @@ footer div .mentions .iconsfooter {
   align-items: center;
   margin: 0 10px 25px 10px;
   border-radius: 15px;
+  background-color: #F5F5F5;
   box-shadow: 3px 3px 5px grey;
   text-align: center;
   font-size: large;
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .section2 .functioning .choice {
@@ -308,13 +310,10 @@ footer div .mentions .iconsfooter {
 .section2 .functioning .choice .icons {
   margin: 20px;
 }
-.section2 .functioning .choice_colorgrey {
-  background-color: #F5F5F5;
-}
-.section2 .functioning .choice_color {
+.section2 .functioning .choice:hover {
   background-color: #F2E2FF;
 }
-.section2 .functioning .choice_color .icons {
+.section2 .functioning .choice:hover .icons {
   color: #9356DC;
 }
 
